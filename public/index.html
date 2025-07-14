@@ -35,30 +35,51 @@
       </div>
     </div>
   </nav>
+  <!-- Mobile Slide-in Menu Overlay -->
+  <div id="mobileMenuOverlay" class="mobile-menu-overlay d-lg-none">
+    <div class="mobile-menu-content">
+      <button id="closeMobileMenu" class="btn btn-link text-light mobile-menu-close"><i class="fas fa-times fa-lg"></i></button>
+      <ul class="mobile-menu-list">
+        <li><a href="#about-education" class="mobile-menu-link">About</a></li>
+        <li><a href="#projects" class="mobile-menu-link">Projects</a></li>
+        <li><a href="#contact" class="mobile-menu-link">Contact</a></li>
+        <li class="mobile-menu-social">
+          <span>Social</span>
+          <div class="mobile-menu-social-links">
+            <a href="https://github.com/Harshvardhan-Patil-264" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/harshvardhan-patil-hp/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/harsh_patil_264/" target="_blank"><i class="fab fa-instagram"></i></a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
   <!-- Hero Section -->
   <section class="hero-section d-flex align-items-center min-vh-100 px-4 px-md-5 js-fadeInUp">
     <div class="container-fluid">
-      <div class="row align-items-center justify-content-between flex-column-reverse flex-lg-row">
+      <div class="row align-items-center justify-content-between flex-column-reverse flex-lg-row hero-mobile-row">
         <!-- Left: Text -->
-        <div class="col-12 col-lg-6 mb-5 mb-lg-0">
-          <div class="hero-text">
+        <div class="col-12 col-lg-6 mb-5 mb-lg-0 hero-mobile-left">
+          <div class="hero-text hero-mobile-text">
             <p class="text-secondary fw-semibold mb-2 fs-5">Hi, I am</p>
             <h1 class="hero-title display-1 fw-bold mb-2">Harshvardhan<br>Patil</h1>
             <h3 class="hero-subtitle fw-semibold text-secondary mb-4">Computer Science Engineer</h3>
             <div class="d-flex flex-wrap gap-3 mb-4">
-              <a href="https://drive.google.com/file/d/1S_8nFKYUeUyq5wM1DyrLh0ILUcEuH-ry/view?usp=sharing" class="btn btn-light btn-lg px-4 d-flex align-items-center gap-2" download><i class="fas fa-file-alt"></i> Resume</a>
-              <a href="#contact" class="btn btn-outline-light btn-lg px-4">Hire Me</a>
-              <!-- HERO SECTION BUTTONS (replace # with real links) -->
-              <a href="https://github.com/Harshvardhan-Patil-264" class="btn btn-dark btn-lg px-3" title="GitHub" target="_blank"><i class="fab fa-github fa-lg"></i></a>
-              <a href="https://www.linkedin.com/in/harshvardhan-patil-hp/" class="btn btn-dark btn-lg px-3" title="LinkedIn" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
-              <a href="https://www.instagram.com/harsh_patil_264/" class="btn btn-dark btn-lg px-3" title="Instagram" target="_blank"><i class="fab fa-instagram fa-lg"></i></a>
+              <div class="hero-btn-row">
+                <a href="https://drive.google.com/file/d/1S_8nFKYUeUyq5wM1DyrLh0ILUcEuH-ry/view?usp=sharing" class="btn btn-light btn-lg px-4 d-flex align-items-center gap-2" download><i class="fas fa-file-alt"></i> Resume</a>
+                <a href="#contact" class="btn btn-outline-light btn-lg px-4">Hire Me</a>
+              </div>
+              <div class="hero-social-row">
+                <a href="https://github.com/Harshvardhan-Patil-264" class="btn btn-dark btn-lg px-3" title="GitHub" target="_blank"><i class="fab fa-github fa-lg"></i></a>
+                <a href="https://www.linkedin.com/in/harshvardhan-patil-hp/" class="btn btn-dark btn-lg px-3" title="LinkedIn" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
+                <a href="https://www.instagram.com/harsh_patil_264/" class="btn btn-dark btn-lg px-3" title="Instagram" target="_blank"><i class="fab fa-instagram fa-lg"></i></a>
+              </div>
             </div>
           </div>
         </div>
         <!-- Right: 3D/Tech Image Placeholder -->
-        <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center mb-4 mb-lg-0">
+        <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center mb-4 mb-lg-0 hero-mobile-right">
           <div class="hero-img-3d">
-            <!-- Placeholder SVG/3D image -->
             <img src="/assets/profile_pic.png" alt="Harshvardhan Patil" class="img-fluid hero-profile-img" style="max-width: 600px;border-radius: 2rem;filter: drop-shadow(0 8px 32px #0008);">
           </div>
         </div>
@@ -318,9 +339,10 @@
         <a href="https://github.com/Harshvardhan-Patil-264" target="_blank" class="footer-icon mx-2"><i class="fab fa-github fa-lg"></i></a>
         <a href="https://www.linkedin.com/in/harshvardhan-patil-hp/" target="_blank" class="footer-icon mx-2"><i class="fab fa-linkedin fa-lg"></i></a>
         <a href="https://www.instagram.com/harsh_patil_264/" target="_blank" class="footer-icon mx-2"><i class="fab fa-instagram fa-lg"></i></a>
-      </div>
-      <div class="footer-right fw-bold">
-        <a href="https://www.blogger.com/blog/posts/527855583070595875?hl=en-GB&tab=jj" class="text-light mx-2" target="_blank">Blog</a>
+        <div class=" fw-bold">
+          <a href="https://www.blogger.com/blog/posts/527855583070595875?hl=en-GB&tab=jj" class="text-light mx-2" target="_blank">Blog</a>
+        </div>
+        
       </div>
     </div>
   </footer>

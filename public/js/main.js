@@ -118,4 +118,27 @@ document.addEventListener('DOMContentLoaded', function() {
     // Fallback: show all
     animatedEls.forEach(el => el.classList.add('fadeInUp-active'));
   }
+
+  // --- Mobile Menu Overlay ---
+  const mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
+  const openMenuBtn = document.querySelector('.btn-outline-light.d-lg-none');
+  const closeMenuBtn = document.getElementById('closeMobileMenu');
+  const mobileMenuLinks = document.querySelectorAll('.mobile-menu-link');
+  if (openMenuBtn && mobileMenuOverlay) {
+    openMenuBtn.addEventListener('click', function() {
+      mobileMenuOverlay.classList.add('open');
+    });
+  }
+  if (closeMenuBtn && mobileMenuOverlay) {
+    closeMenuBtn.addEventListener('click', function() {
+      mobileMenuOverlay.classList.remove('open');
+    });
+  }
+  if (mobileMenuLinks && mobileMenuOverlay) {
+    mobileMenuLinks.forEach(link => {
+      link.addEventListener('click', function() {
+        mobileMenuOverlay.classList.remove('open');
+      });
+    });
+  }
 }); 
