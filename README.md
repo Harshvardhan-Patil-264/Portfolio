@@ -98,7 +98,8 @@ A professional, modern, and fully responsive portfolio website for Harshvardhan 
 
 ## 📸 Screenshots
 
-> <img width="1919" height="927" alt="image" src="https://github.com/user-attachments/assets/5021b3a9-42ed-449f-9652-20ff3c6bb1c5" />
+> <img width="1916" height="909" alt="image" src="https://github.com/user-attachments/assets/46b8c826-1bb4-4d0f-969d-47120584386e" />
+
 
 
 ---
