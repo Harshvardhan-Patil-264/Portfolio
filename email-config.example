@@ -1,0 +1,21 @@
+# Email Configuration for Portfolio Website
+# Replace nodemailer with Resend for better security
+
+# 1. Sign up at https://resend.com (free tier available)
+# 2. Get your API key from the dashboard
+# 3. Create a .env file in your project root with:
+
+RESEND_API_KEY=re_your_api_key_here
+CONTACT_EMAIL=your-email@example.com
+PORT=3000
+
+# Benefits of Resend over nodemailer:
+# - More secure (no password storage)
+# - Better deliverability
+# - Modern API
+# - Free tier available
+# - Better error handling
+# - No need to configure SMTP settings
+
+# IMPORTANT: Replace 'your-email@example.com' with your actual email address
+# This email will receive contact form submissions 

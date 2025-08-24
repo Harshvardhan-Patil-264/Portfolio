@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harshvardhan Patil | Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="/assets/letter-h.png">
+</head>
+<body class="dark-mode">
+  <!-- Starry Background -->
+  <div class="star-bg"></div>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-transparent py-3 px-4">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold fs-4" href="#">Harshvardhan Patil</a>
+      <div class="d-flex align-items-center gap-3 ms-auto">
+        <ul class="navbar-nav mb-2 mb-lg-0 d-none d-lg-flex" style="gap: 1.5rem;">
+          <li class="nav-item"><a class="nav-link" href="#about-education">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="socialDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Social</a>
+            <ul class="dropdown-menu" aria-labelledby="socialDropdown">
+              <li><a class="dropdown-item" href="https://github.com/Harshvardhan-Patil-264" target="_blank"><i class="fab fa-github me-2"></i>GitHub</a></li>
+              <li><a class="dropdown-item" href="https://www.linkedin.com/in/harshvardhan-patil-hp/" target="_blank"><i class="fab fa-linkedin me-2"></i>LinkedIn</a></li>
+              <li><a class="dropdown-item" href="https://www.instagram.com/harsh_patil_264/" target="_blank"><i class="fab fa-instagram me-2"></i>Instagram</a></li>
+            </ul>
+          </li>
+        </ul>
+        <button id="darkModeToggle" class="btn btn-dark rounded-circle shadow-sm" title="Toggle dark mode"><i class="fas fa-moon"></i></button>
+        <button class="btn btn-outline-light d-lg-none" type="button"><i class="fas fa-bars"></i> Menu</button>
+      </div>
+    </div>
+  </nav>
+  <!-- Mobile Slide-in Menu Overlay -->
+  <div id="mobileMenuOverlay" class="mobile-menu-overlay d-lg-none">
+    <div class="mobile-menu-content">
+      <button id="closeMobileMenu" class="btn btn-link text-light mobile-menu-close"><i class="fas fa-times fa-lg"></i></button>
+      <ul class="mobile-menu-list">
+        <li><a href="#about-education" class="mobile-menu-link">About</a></li>
+        <li><a href="#skills" class="mobile-menu-link">Skills</a></li>
+        <li><a href="#projects" class="mobile-menu-link">Projects</a></li>
+        <li><a href="#contact" class="mobile-menu-link">Contact</a></li>
+        <li class="mobile-menu-social">
+          <span>Social</span>
+          <div class="mobile-menu-social-links">
+            <a href="https://github.com/Harshvardhan-Patil-264" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/harshvardhan-patil-hp/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/harsh_patil_264/" target="_blank"><i class="fab fa-instagram"></i></a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- Hero Section -->
+  <section class="hero-section d-flex align-items-center min-vh-100 px-4 px-md-5 js-fadeInUp">
+    <div class="container-fluid">
+      <div class="row align-items-center justify-content-between flex-column-reverse flex-lg-row hero-mobile-row">
+        <!-- Left: Text -->
+        <div class="col-12 col-lg-6 mb-5 mb-lg-0 hero-mobile-left">
+          <div class="hero-text hero-mobile-text">
+            <p class="text-secondary fw-semibold mb-2 fs-5">Hi, I am</p>
+            <h1 class="hero-title display-1 fw-bold mb-2">Harshvardhan<br>Patil</h1>
+            <h3 class="hero-subtitle fw-semibold text-secondary mb-4">Computer Science Engineer</h3>
+            <div class="d-flex flex-wrap gap-3 mb-4">
+              <div class="hero-btn-row">
+                <a href="https://drive.google.com/file/d/1ZYMrGcdkWIambG8N_0WpTPNJE3DlXnjK/view?usp=sharing" class="btn btn-light btn-lg px-4 d-flex align-items-center gap-2" download><i class="fas fa-file-alt"></i> Resume</a>
+                <a href="#contact" class="btn btn-outline-light btn-lg px-4">Hire Me</a>
+              </div>
+              <div class="hero-social-row">
+                <a href="https://github.com/Harshvardhan-Patil-264" class="btn btn-dark btn-lg px-3" title="GitHub" target="_blank"><i class="fab fa-github fa-lg"></i></a>
+                <a href="https://www.linkedin.com/in/harshvardhan-patil-hp/" class="btn btn-dark btn-lg px-3" title="LinkedIn" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
+                <a href="https://www.instagram.com/harsh_patil_264/" class="btn btn-dark btn-lg px-3" title="Instagram" target="_blank"><i class="fab fa-instagram fa-lg"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Right: 3D/Tech Image Placeholder -->
+        <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center mb-4 mb-lg-0 hero-mobile-right">
+          <div class="hero-img-3d">
+            <img src="/assets/profile_pic.png" alt="Harshvardhan Patil" class="img-fluid hero-profile-img" style="max-width: 600px;border-radius: 2rem;filter: drop-shadow(0 8px 32px #0008);">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Scroll Indicator -->
+    <div class="scroll-indicator position-absolute start-50 translate-middle-x" style="bottom: 32px;">
+      <span class="scroll-mouse"></span>
+    </div>
+  </section>
+
+  <!-- About & Education Section -->
+  <section id="about-education" class="about-education-section container py-5 js-fadeInUp">
+    <div class="row justify-content-center g-5">
+      <!-- About Card -->
+      <div class="col-12 col-lg-5 d-flex align-items-stretch js-fadeInUp">
+        <div class="about-card-modern bg-dark text-light rounded-4 shadow-lg p-4 p-md-5 w-100 d-flex flex-column justify-content-center position-relative">
+          <div class="about-accent-bar"></div>
+          <div class="d-flex align-items-center mb-3">
+            <span class="about-icon-modern bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 48px; height: 48px; font-size: 1.7rem;"><i class="fas fa-bullseye"></i></span>
+            <h2 class="fw-bold mb-0 text-primary" style="letter-spacing:1px;">OBJECTIVE</h2>
+          </div>
+          <p class="fs-5 mb-0 about-text-modern">
+            Aspiring to grow as a Computer Science Engineer by contributing to innovative projects and delivering meaningful results in a dynamic and challenging environment.
+          </p>
+        </div>
+      </div>
+      <!-- Education Card -->
+      <div class="col-12 col-lg-7 d-flex align-items-stretch js-fadeInUp">
+        <div class="education-card bg-dark text-light rounded-4 shadow-lg p-4 p-md-5 w-100">
+          <h2 class="fw-bold mb-4 text-primary" style="letter-spacing:1px;">EDUCATION</h2>
+          <div class="education-timeline-modern">
+            <!-- B.Tech -->
+            <div class="edu-step d-flex mb-5">
+              <div class="edu-icon flex-shrink-0 me-4">
+                <span class="edu-badge bg-primary"><i class="fas fa-user-graduate"></i></span>
+                <span class="edu-year badge bg-secondary mt-2">2022–2026</span>
+              </div>
+              <div>
+                <div class="fw-bold fs-5 mb-1">B.Tech</div>
+                <div class="fw-semibold">TKIET College of Engineering, Warananagar</div>
+                <div class="small text-secondary">Kolhapur, India</div>
+                <div class="small">CGPA: 9.05</div>
+              </div>
+            </div>
+            <!-- HSC -->
+            <div class="edu-step d-flex mb-5">
+              <div class="edu-icon flex-shrink-0 me-4">
+                <span class="edu-badge bg-success"><i class="fas fa-school"></i></span>
+                <span class="edu-year badge bg-secondary mt-2">2020–2022</span>
+              </div>
+              <div>
+                <div class="fw-bold fs-5 mb-1">HSC</div>
+                <div class="fw-semibold">Yashwantrao Chavan Warana Mahavidyalaya, Warananagar</div>
+                <div class="small text-secondary">Warananagar, India</div>
+                <div class="small">Percentage: 73.50</div>
+              </div>
+            </div>
+            <!-- SSC -->
+            <div class="edu-step d-flex">
+              <div class="edu-icon flex-shrink-0 me-4">
+                <span class="edu-badge bg-info"><i class="fas fa-certificate"></i></span>
+                <span class="edu-year badge bg-secondary mt-2">2019–2020</span>
+              </div>
+              <div>
+                <div class="fw-bold fs-5 mb-1">SSC</div>
+                <div class="fw-semibold">Yashwant International English Academy, Kodoli</div>
+                <div class="small text-secondary">Kodoli, India</div>
+                <div class="small">Percentage: 87.20</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills-section container py-5 js-fadeInUp">
+    <h2 class="fw-bold mb-5 text-primary text-center" style="letter-spacing:1px;">SKILLS & TECHNOLOGIES</h2>
+    
+    <div class="row g-4">
+      <!-- Programming Languages -->
+      <div class="col-12 col-lg-6 js-fadeInUp">
+        <div class="skills-card bg-dark text-light rounded-4 shadow-lg p-4 h-100">
+          <div class="d-flex align-items-center mb-3">
+            <span class="skills-icon bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 48px; height: 48px; font-size: 1.5rem;"><i class="fas fa-code"></i></span>
+            <h3 class="fw-bold mb-0 text-primary">Programming Languages</h3>
+          </div>
+          <div class="skills-grid-horizontal">
+            <div class="skill-item-horizontal d-flex flex-column align-items-center">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" width="40" class="mb-2">
+              <span class="fw-semibold text-center">C Programming</span>
+            </div>
+            <div class="skill-item-horizontal d-flex flex-column align-items-center">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" width="40" class="mb-2">
+              <span class="fw-semibold text-center">C++</span>
+            </div>
+            <div class="skill-item-horizontal d-flex flex-column align-items-center">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="40" class="mb-2">
+              <span class="fw-semibold text-center">Python</span>
+            </div>
+            <div class="skill-item-horizontal d-flex flex-column align-items-center">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="40" class="mb-2">
+              <span class="fw-semibold text-center">Java</span>
+            </div>
+            <div class="skill-item-horizontal d-flex flex-column align-items-center">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="40" class="mb-2">
+              <span class="fw-semibold text-center">JavaScript</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Web Development -->
+      <div class="col-12 col-lg-6 js-fadeInUp">
+        <div class="skills-card bg-dark text-light rounded-4 shadow-lg p-4 h-100">
+          <div class="d-flex align-items-center mb-3">
+            <span class="skills-icon bg-info text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 48px; height: 48px; font-size: 1.5rem;"><i class="fas fa-globe"></i></span>
+            <h3 class="fw-bold mb-0 text-info">Web Development</h3>
+          </div>
+          <div class="skills-grid-horizontal">
+            <div class="skill-item-horizontal d-flex flex-column align-items-center">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="40" class="mb-2">
+              <span class="fw-semibold text-center">HTML5</span>
+            </div>
+            <div class="skill-item-horizontal d-flex flex-column align-items-center">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="40" class="mb-2">
+              <span class="fw-semibold text-center">CSS3</span>
+            </div>
+            <div class="skill-item-horizontal d-flex flex-column align-items-center">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" width="40" class="mb-2">
+              <span class="fw-semibold text-center">Bootstrap</span>
+            </div>
+            <div class="skill-item-horizontal d-flex flex-column align-items-center">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="40" class="mb-2">
+              <span class="fw-semibold text-center">React.js</span>
+            </div>
+            <div class="skill-item-horizontal d-flex flex-column align-items-center">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="40" class="mb-2">
+              <span class="fw-semibold text-center">Node.js</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Databases -->
+      <div class="col-12 col-lg-6 js-fadeInUp">
+        <div class="skills-card bg-dark text-light rounded-4 shadow-lg p-4 h-100">
+          <div class="d-flex align-items-center mb-3">
+            <span class="skills-icon bg-warning text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 48px; height: 48px; font-size: 1.5rem;"><i class="fas fa-database"></i></span>
+            <h3 class="fw-bold mb-0 text-warning">Databases</h3>
+          </div>
+          <div class="skills-grid-horizontal">
+            <div class="skill-item-horizontal d-flex flex-column align-items-center">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="40" class="mb-2">
+              <span class="fw-semibold text-center">MySQL</span>
+            </div>
+            <div class="skill-item-horizontal d-flex flex-column align-items-center">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" width="40" class="mb-2">
+              <span class="fw-semibold text-center">MongoDB</span>
+            </div>
+            <div class="skill-item-horizontal d-flex flex-column align-items-center">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" width="40" class="mb-2">
+              <span class="fw-semibold text-center">SQLite</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tools & Technologies -->
+      <div class="col-12 col-lg-6 js-fadeInUp">
+        <div class="skills-card bg-dark text-light rounded-4 shadow-lg p-4 h-100">
+          <div class="d-flex align-items-center mb-3">
+            <span class="skills-icon bg-danger text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 48px; height: 48px; font-size: 1.5rem;"><i class="fas fa-tools"></i></span>
+            <h3 class="fw-bold mb-0 text-danger">Tools & Technologies</h3>
+          </div>
+          <div class="skills-grid-horizontal">
+            <div class="skill-item-horizontal d-flex flex-column align-items-center">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="40" class="mb-2">
+              <span class="fw-semibold text-center">Git & GitHub</span>
+            </div>
+            <div class="skill-item-horizontal d-flex flex-column align-items-center">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" width="40" class="mb-2">
+              <span class="fw-semibold text-center">VS Code</span>
+            </div>
+            <div class="skill-item-horizontal d-flex flex-column align-items-center">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" width="40" class="mb-2">
+              <span class="fw-semibold text-center">Figma</span>
+            </div>
+            <div class="skill-item-horizontal d-flex flex-column align-items-center">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" width="40" class="mb-2">
+              <span class="fw-semibold text-center">Postman</span>
+            </div>
+
+
+            <div class="skill-item-horizontal d-flex flex-column align-items-center">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" width="40" class="mb-2">
+              <span class="fw-semibold text-center">Linux</span>
+            </div>
+            <div class="skill-item-horizontal d-flex flex-column align-items-center">
+              <i class="fas fa-file-word text-primary mb-2" style="font-size: 40px;"></i>
+              <span class="fw-semibold text-center">MS Office</span>
+            </div>
+            <div class="skill-item-horizontal d-flex flex-column align-items-center">
+              <i class="fas fa-robot text-info mb-2" style="font-size: 40px;"></i>
+              <span class="fw-semibold text-center">AI Prompt Design</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Core Competencies -->
+    <div class="row mt-5">
+      <div class="col-12 js-fadeInUp">
+        <div class="skills-card bg-dark text-light rounded-4 shadow-lg p-4">
+          <div class="d-flex align-items-center mb-4">
+            <span class="skills-icon bg-success text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 48px; height: 48px; font-size: 1.5rem;"><i class="fas fa-star"></i></span>
+            <h3 class="fw-bold mb-0 text-success">Core Competencies</h3>
+          </div>
+          <div class="row g-3">
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="competency-item d-flex align-items-center">
+                <i class="fas fa-check-circle text-success me-2"></i>
+                <span class="small">Data Structures & Algorithms (DSA)</span>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="competency-item d-flex align-items-center">
+                <i class="fas fa-check-circle text-success me-2"></i>
+                <span class="small">Object-Oriented Programming</span>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="competency-item d-flex align-items-center">
+                <i class="fas fa-check-circle text-success me-2"></i>
+                <span class="small">Structured Query Language (SQL)</span>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="competency-item d-flex align-items-center">
+                <i class="fas fa-check-circle text-success me-2"></i>
+                <span class="small">Database Management System</span>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="competency-item d-flex align-items-center">
+                <i class="fas fa-check-circle text-success me-2"></i>
+                <span class="small">Operating Systems (OS)</span>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="competency-item d-flex align-items-center">
+                <i class="fas fa-check-circle text-success me-2"></i>
+                <span class="small">Problem Solving</span>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="competency-item d-flex align-items-center">
+                <i class="fas fa-check-circle text-success me-2"></i>
+                <span class="small">Responsive Web Design</span>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="competency-item d-flex align-items-center">
+                <i class="fas fa-check-circle text-success me-2"></i>
+                <span class="small">API Development</span>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="competency-item d-flex align-items-center">
+                <i class="fas fa-check-circle text-success me-2"></i>
+                <span class="small">Version Control</span>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="competency-item d-flex align-items-center">
+                <i class="fas fa-check-circle text-success me-2"></i>
+                <span class="small">Team Collaboration</span>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="competency-item d-flex align-items-center">
+                <i class="fas fa-check-circle text-success me-2"></i>
+                <span class="small">UI/UX Design</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section container py-5 js-fadeInUp">
+    <h2 class="fw-bold mb-4 text-primary text-center" style="letter-spacing:1px;">PROJECTS</h2>
+    <div class="row g-4 justify-content-center">
+      <!-- Election Voting System Project -->
+      <div class="col-12 col-md-6 col-lg-4 js-fadeInUp">
+        <div class="project-card-modern bg-dark text-light rounded-4 shadow-lg p-4 h-100 d-flex flex-column justify-content-between">
+          <div>
+            <img src="/assets/election.png" alt="Election Voting System Screenshot" class="project-thumb mb-3">
+            <h5 class="fw-bold mb-2">Election Voting System</h5>
+            <p class="small mb-3">A C language console-based system for college elections. Features student registration, secure voting, admin controls, and result management. Ensures one vote per student and supports NOTA.<br><a href="https://github.com/Harshvardhan-Patil-264/Election-Voting-system-project" target="_blank">Read more</a></p>
+          </div>
+          <a href="https://github.com/Harshvardhan-Patil-264/Election-Voting-system-project" target="_blank" class="btn btn-outline-primary mt-auto"><i class="fab fa-github me-2"></i>View on GitHub</a>
+        </div>
+      </div>
+      <!-- Spotify Clone -->
+      <div class="col-12 col-md-6 col-lg-4 js-fadeInUp">
+        <div class="project-card-modern bg-dark text-light rounded-4 shadow-lg p-4 h-100 d-flex flex-column justify-content-between">
+          <div>
+            <img src="/assets/spotify.png" alt="spotify" class="project-thumb mb-3">
+            <h5 class="fw-bold mb-2">Spotify Clone</h5>
+            <p class="small mb-3">A web-based Spotify clone built with HTML, CSS, and JavaScript. Browse and play music, view song details, and enjoy a responsive, user-friendly interface.<br><a href="https://github.com/Harshvardhan-Patil-264/Spotify-clone" target="_blank">Read more</a></p>
+          </div>
+          <a href="https://github.com/Harshvardhan-Patil-264/Spotify-clone" target="_blank" class="btn btn-outline-primary mt-auto"><i class="fab fa-github me-2"></i>View on GitHub</a>
+        </div>
+      </div>
+      <!-- QuickLaw -->
+      <div class="col-12 col-md-6 col-lg-4 js-fadeInUp">
+        <div class="project-card-modern bg-dark text-light rounded-4 shadow-lg p-4 h-100 d-flex flex-column justify-content-between">
+          <div>
+            <img src="/assets/3.png" alt="spotify" class="project-thumb mb-3">
+            <h5 class="fw-bold mb-2">QuickLaw</h5>
+            <p class="small mb-3">A legal information platform (details from README needed). Provides quick access to legal resources and tools for users.<br><a href="https://github.com/Harshvardhan-Patil-264/QuickLaw" target="_blank">Read more</a></p>
+          </div>
+          <a href="https://github.com/Harshvardhan-Patil-264/QuickLaw" target="_blank" class="btn btn-outline-primary mt-auto"><i class="fab fa-github me-2"></i>View on GitHub</a>
+        </div>
+      </div>
+      <!-- DSA -->
+      <div class="col-12 col-md-6 col-lg-4 js-fadeInUp">
+        <div class="project-card-modern bg-dark text-light rounded-4 shadow-lg p-4 h-100 d-flex flex-column justify-content-between">
+          <div>
+            <img src="/assets/4.png" alt="spotify" class="project-thumb mb-3">
+            <h5 class="fw-bold mb-2">DSA</h5>
+            <p class="small mb-3">A collection of Data Structures and Algorithms implementations and problems. Useful for coding interviews and practice.<br><a href="https://github.com/Harshvardhan-Patil-264/DSA" target="_blank">Read more</a></p>
+          </div>
+          <a href="https://github.com/Harshvardhan-Patil-264/DSA" target="_blank" class="btn btn-outline-primary mt-auto"><i class="fab fa-github me-2"></i>View on GitHub</a>
+        </div>
+      </div>
+      <!-- CabNCarry Admin -->
+      <div class="col-12 col-md-6 col-lg-4 js-fadeInUp">
+        <div class="project-card-modern bg-dark text-light rounded-4 shadow-lg p-4 h-100 d-flex flex-column justify-content-between">
+          <div>
+            <img src="/assets/5.png" alt="spotify" class="project-thumb mb-3">
+            <h5 class="fw-bold mb-2">CabNCarry Admin</h5>
+            <p class="small mb-3">Admin dashboard for CabNCarry application. Manage users, rides, and analytics for a cab booking platform.<br><a href="https://github.com/Harshvardhan-Patil-264/cabncarry_admin" target="_blank">Read more</a></p>
+          </div>
+          <a href="https://github.com/Harshvardhan-Patil-264/cabncarry_admin" target="_blank" class="btn btn-outline-primary mt-auto"><i class="fab fa-github me-2"></i>View on GitHub</a>
+        </div>
+      </div>
+      <!-- Fitness Tracker -->
+      <div class="col-12 col-md-6 col-lg-4 js-fadeInUp">
+        <div class="project-card-modern bg-dark text-light rounded-4 shadow-lg p-4 h-100 d-flex flex-column justify-content-between">
+          <div>
+            <img src="/assets/6.png" alt="spotify" class="project-thumb mb-3">
+            <h5 class="fw-bold mb-2">Fitness Tracker</h5>
+            <p class="small mb-3">A fitness tracking app (details from README needed). Track workouts, progress, and health metrics.<br><a href="https://github.com/Harshvardhan-Patil-264/Fitness_tracker" target="_blank">Read more</a></p>
+          </div>
+          <a href="https://github.com/Harshvardhan-Patil-264/Fitness_tracker" target="_blank" class="btn btn-outline-primary mt-auto"><i class="fab fa-github me-2"></i>View on GitHub</a>
+        </div>
+      </div>
+      <!-- CabNCarry Application -->
+      <div class="col-12 col-md-6 col-lg-4 js-fadeInUp">
+        <div class="project-card-modern bg-dark text-light rounded-4 shadow-lg p-4 h-100 d-flex flex-column justify-content-between">
+          <div>
+            <img src="/assets/7.png" alt="spotify" class="project-thumb mb-3">
+            <h5 class="fw-bold mb-2">CabNCarry Application</h5>
+            <p class="small mb-3">A cab booking application (details from README needed). Book rides, manage bookings, and more.<br><a href="https://github.com/Harshvardhan-Patil-264/CabNCarry_Application" target="_blank">Read more</a></p>
+          </div>
+          <a href="https://github.com/Harshvardhan-Patil-264/CabNCarry_Application" target="_blank" class="btn btn-outline-primary mt-auto"><i class="fab fa-github me-2"></i>View on GitHub</a>
+        </div>
+      </div>
+      <!-- House Price Prediction -->
+      <div class="col-12 col-md-6 col-lg-4 js-fadeInUp">
+        <div class="project-card-modern bg-dark text-light rounded-4 shadow-lg p-4 h-100 d-flex flex-column justify-content-between">
+          <div>
+            <img src="/assets/8.png" alt="spotify" class="project-thumb mb-3">
+            <h5 class="fw-bold mb-2">House Price Prediction</h5>
+            <p class="small mb-3">A machine learning project (details from README needed). Predicts house prices using various features and ML models.<br><a href="https://github.com/Harshvardhan-Patil-264/House_price_prediction" target="_blank">Read more</a></p>
+          </div>
+          <a href="https://github.com/Harshvardhan-Patil-264/House_price_prediction" target="_blank" class="btn btn-outline-primary mt-auto"><i class="fab fa-github me-2"></i>View on GitHub</a>
+        </div>
+      </div>
+      <!-- New Project: take9.png -->
+      <div class="col-12 col-md-6 col-lg-4 js-fadeInUp">
+        <div class="project-card-modern bg-dark text-light rounded-4 shadow-lg p-4 h-100 d-flex flex-column justify-content-between">
+          <div>
+            <img src="/assets/9.png" alt="Project Screenshot" class="project-thumb mb-3">
+            <h5 class="fw-bold mb-2">My Portfolio Website</h5>
+            <p class="small mb-3">This is my portfolio website, built with HTML, CSS, JavaScript, and Bootstrap. Features a modern responsive design, project showcase, contact form with email integration, and dark mode support.<br><a href="https://github.com/Harshvardhan-Patil-264/portfolio-website" target="_blank">Read more</a></p>
+          </div>
+          <a href="https://github.com/Harshvardhan-Patil-264/Portfolio" target="_blank" class="btn btn-outline-primary mt-auto"><i class="fab fa-github me-2"></i>View on GitHub</a>
+        </div>
+      </div>
+
+    </div>
+    <div class="text-center mt-4">
+      <a href="https://github.com/Harshvardhan-Patil-264?tab=repositories" target="_blank" class="btn btn-primary btn-lg"><i class="fab fa-github me-2"></i>See All Projects on GitHub</a>
+    </div>
+  </section>
+
+  <!-- Contact & Footer Section -->
+  <section id="contact" class="contact-section container-fluid py-5 d-flex flex-column flex-md-row align-items-start justify-content-between js-fadeInUp">
+    <div class="contact-form-card bg-dark text-light rounded-4 shadow-lg p-4 p-md-5 mb-4 mb-md-0" style="max-width: 45%;min-width: 320px;">
+      <h2 class="fw-bold mb-2">Contact Form</h2>
+      <p class="mb-4 text-secondary" style="font-weight: 500;">
+        Please contact me directly at <span class="text-primary">harsh264patil@gmail.com</span> or drop your info here.
+      </p>
+      <form id="contactForm" autocomplete="off">
+        <div class="row mb-3">
+          <div class="col-12 col-md-6 mb-3 mb-md-0">
+            <label class="form-label fw-semibold" for="name">Full name</label>
+            <input type="text" class="form-control form-control-lg bg-dark text-light border-secondary" id="name" name="name" placeholder="Your Name" required="">
+          </div>
+          <div class="col-12 col-md-6">
+            <label class="form-label fw-semibold" for="email">Email Address</label>
+            <input type="email" class="form-control form-control-lg bg-dark text-light border-secondary" id="email" name="email" placeholder="you@example.com" required="">
+          </div>
+        </div>
+        <div class="mb-3">
+          <label class="form-label fw-semibold" for="subject">Subject</label>
+          <input type="text" class="form-control form-control-lg bg-dark text-light border-secondary" id="subject" name="subject" placeholder="What's this about?" required="">
+        </div>
+        <div class="mb-3">
+          <label class="form-label fw-semibold" for="message">Your Message</label>
+          <textarea class="form-control form-control-lg bg-dark text-light border-secondary" id="message" name="message" rows="4" placeholder="Tell me about your project," required=""></textarea>
+        </div>
+        <div class="mb-3 text-secondary small">
+          I'll never share your data with anyone else. Pinky promise!
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg w-100 d-flex align-items-center justify-content-center gap-2" id="submitBtn">
+          <span id="submitText">Send Message</span>
+          <span id="submitIcon" class="ms-1"><i class="fas fa-arrow-right"></i></span>
+        </button>
+        <div id="formMessage" class="mt-3" style="display: none;"></div>
+      </form>
+    </div>
+
+    <!-- Thank You Image Section -->
+    <div class="thank-you-section d-flex flex-column align-items-center justify-content-center" style="max-width: 45%; min-width: 320px; margin-left: auto;">
+      <div class="thank-you-card bg-dark text-light rounded-4 shadow-lg p-4 p-md-5 text-center position-relative overflow-hidden js-fadeInUp" style="    max-width: 80%;">
+        <div class="thank-you-accent-bar"></div>
+        <div class="thank-you-img mb-4">
+          <img src="/assets/thank u.png" alt="Thank You" class="img-fluid thank-you-main-img" style="max-width: 320px; width: 100%; height: auto; object-fit: contain; border-radius: 1.2rem; box-shadow: 0 4px 32px #0d6efd22; background: #23243e;" />
+        </div>
+        <h3 class="fw-bold mb-3 text-primary">Thank You!</h3>
+        <p class="mb-4 text-secondary" style="font-size: 1.1rem; line-height: 1.6;">
+          I appreciate you taking the time to reach out. I'll get back to you as soon as possible!
+        </p>
+        <div class="thank-you-features">
+          <div class="feature-item d-flex align-items-center mb-3">
+            <i class="fas fa-check-circle text-success me-3"></i>
+            <span class="text-light">Quick response guaranteed</span>
+          </div>
+          <div class="feature-item d-flex align-items-center mb-3">
+            <i class="fas fa-shield-alt text-info me-3"></i>
+            <span class="text-light">Your data is secure</span>
+          </div>
+          <div class="feature-item d-flex align-items-center">
+            <i class="fas fa-clock text-warning me-3"></i>
+            <span class="text-light">Usually respond within 24 hours</span>
+          </div>
+        </div>
+        <div class="thank-you-decoration">
+          <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-section bg-dark text-light py-4 mt-5">
+    <div class="container-fluid d-flex flex-column flex-md-row align-items-center justify-content-between">
+      <div class="footer-left mb-3 mb-md-0 small text-secondary">
+        © 2025 Harshvardhan Patil. All rights reserved.
+      </div>
+      <div class="footer-center mb-3 mb-md-0">
+        <!-- FOOTER SOCIAL ICONS -->
+        <a href="https://github.com/Harshvardhan-Patil-264" target="_blank" class="footer-icon mx-2"><i class="fab fa-github fa-lg"></i></a>
+        <a href="https://www.linkedin.com/in/harshvardhan-patil-hp/" target="_blank" class="footer-icon mx-2"><i class="fab fa-linkedin fa-lg"></i></a>
+        <a href="https://www.instagram.com/harsh_patil_264/" target="_blank" class="footer-icon mx-2"><i class="fab fa-instagram fa-lg"></i></a>
+        <div class=" fw-bold">
+          <a href="https://www.blogger.com/blog/posts/527855583070595875?hl=en-GB&tab=jj" class="text-light mx-2" target="_blank">Blog</a>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html> 
